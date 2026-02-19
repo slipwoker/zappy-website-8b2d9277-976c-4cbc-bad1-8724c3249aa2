@@ -1,0 +1,47 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+גלו את מגוון בדי החוץ העמידים ביותר לריהוט הגן שלכם. חומרים איכוtiים עמידים בפני שמש, גשם ולחות. הפכו את הגינה למרחב חלומות עכשיו!
+
+### קולקציות
+https://example.com/collections
+עיינו בקולקציות הבלעדיות שלנו: בדים לריפוד ריהוט גן עמיד בכל סגנון וצבע. מדגמים חדשניים שישדרגו את החצר שלכם. בואו להתרשם מהמבחר!
+
+### חומרים ותחזוקה
+https://example.com/materials-care
+למדו כיצד לשמור על בדי החוץ שלכם במצב מושלם לשנים. טיפים מקצועיים לניקוי, כיסויים להגנה על ריהוט גן ושמירה על עמידות. הידע שיחסוך לכם כסף!
+
+### צור קשר
+https://example.com/contact
+צריכים עזרה בבחירת הבדים המושלמים לגינה? הצוות המקצועי שלנו כאן כדי לייעץ ולהתאים את הפתרון האידיאלי עבורכם. דברו איתנו היום!
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt

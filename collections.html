@@ -1,0 +1,558 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>קולקציות בדים ייחודיות לגינה — sunova</title>
+  <meta name="description" content="עיינו בקולקציות הבלעדיות שלנו: בדים לריפוד ריהוט גן עמיד בכל סגנון וצבע. מדגמים חדשניים שישדרגו את החצר שלכם. בואו להתרשם מהמבחר!">
+  <meta name="keywords" content="קולקציות בדי חוץ, בדים לריפוד ריהוט גן עמיד, דגמי בדים לגינה, סגנונות ריהוט חוץ, מבחר בדי חוץ">
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:title" content="קולקציות בדים ייחודיות לגינה — sunova">
+  <meta property="og:description" content="עיינו בקולקציות הבלעדיות שלנו: בדים לריפוד ריהוט גן עמיד בכל סגנון וצבע. מדגמים חדשניים שישדרגו את החצר שלכם. בואו להתרשם מהמבחר!">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="קולקציות בדים ייחודיות לגינה — sunova">
+  <meta name="twitter:description" content="עיינו בקולקציות הבלעדיות שלנו: בדים לריפוד ריהוט גן עמיד בכל סגנון וצבע. מדגמים חדשניים שישדרגו את החצר שלכם. בואו להתרשם מהמבחר!">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: '8b2d9277-976c-4cbc-bad1-8724c3249aa2',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+
+    <style id="zappy-dropdown-submenu-styles">
+      /* ========== DESKTOP DROPDOWN SUBMENU STYLES ========== */
+      /* Base styles for dropdown submenus - parent must be positioned */
+      .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { position: relative; }
+      /* Submenu base - hidden by default */
+      .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { display: block !important; position: absolute !important; top: 100%; left: 0; min-width: 220px; background: white; border-radius: 8px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); padding: 8px 0; opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s ease; z-index: 1000; list-style: none; pointer-events: none; }
+      /* CRITICAL: Desktop hover styles to show dropdown */
+      .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Submenu item styling */
+      .sub-menu li { list-style: none; margin: 0; padding: 0; }
+      .sub-menu a { display: block !important; padding: 10px 16px !important; color: #333 !important; font-weight: 500; text-decoration: none; white-space: nowrap; transition: background-color 0.2s; }
+      .sub-menu a:hover { background-color: #f5f5f5; }
+      /* RTL (Hebrew/Arabic) dropdown positioning */
+      [dir="rtl"] .nav-menu .sub-menu, [dir="rtl"] nav .sub-menu, [dir="rtl"] .navbar .sub-menu, html[lang="he"] .nav-menu .sub-menu, html[lang="he"] nav .sub-menu, html[lang="he"] .navbar .sub-menu, html[lang="ar"] .nav-menu .sub-menu, html[lang="ar"] nav .sub-menu, html[lang="ar"] .navbar .sub-menu { left: auto !important; right: 0 !important; }
+      /* Hide empty dropdown menus */
+      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))), .sub-menu:not(:has(li)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+      /* Desktop: show submenu on Menu Group hover */
+      li:has(.menu-group-title):hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Menu Group title styling */
+      .nav-menu > li > .menu-group-title, #navMenu > li > .menu-group-title { display: inline-block; padding: 0.5rem 1rem; cursor: default; user-select: none; }
+      
+      /* ========== MOBILE SUBMENU STYLES ========== */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { position: static !important; transform: none !important; box-shadow: none !important; background: transparent !important; max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; padding: 0 !important; border-radius: 0 !important; }
+        .sub-menu.mobile-expanded { max-height: 500px !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded { padding: 8px 16px 8px 0 !important; }
+        /* Disable hover behavior on mobile */
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 0; visibility: hidden; pointer-events: none; }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { display: flex !important; flex-wrap: wrap !important; align-items: center !important; }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a { flex: 1 !important; }
+        .nav-menu li:has(.sub-menu) > a [class*="chevron"], .nav-menu li:has(.sub-menu) > a [class*="arrow"], .nav-menu li:has(.sub-menu) > a .fa-chevron-down, .nav-menu li:has(.sub-menu) > a .fa-angle-down, nav li:has(.sub-menu) > a [class*="chevron"], nav li:has(.sub-menu) > a [class*="arrow"], #navMenu li:has(.sub-menu) > a [class*="chevron"], #navMenu li:has(.sub-menu) > a [class*="arrow"] { display: none !important; visibility: hidden !important; }
+        .mobile-submenu-toggle { display: flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: 44px !important; background: transparent !important; border: none !important; cursor: pointer !important; }
+        .mobile-submenu-toggle::after { content: '' !important; width: 0 !important; height: 0 !important; border-left: 6px solid transparent !important; border-right: 6px solid transparent !important; border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important; }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu { flex-basis: 100% !important; width: 100% !important; }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; }
+        .nav-menu li:has(.sub-menu) > .menu-group-title, nav li:has(.sub-menu) > .menu-group-title, .navbar li:has(.sub-menu) > .menu-group-title, #navMenu li:has(.sub-menu) > .menu-group-title { flex: 1 !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+</head>
+<body>
+  <nav class="navbar" dir="rtl">
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+    </svg>
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none;">
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+    </svg>
+  </button>
+  
+  <button class="phone-header-btn" aria-label="Call">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+  </button>
+  
+  <div class="nav-container">
+    <div class="nav-brand">
+      <a href="/" class="logo-link">
+        <img src="/assets/business-logo.webp" alt="sunova" class="logo" />
+      </a>
+    </div>
+    
+    <ul class="nav-menu" id="navMenu"><li><a href="/collections">קולקציות</a></li><li><a href="/materials-care">חומרים ותחזוקה</a></li></ul>
+    
+    <div class="nav-cta-container">
+      <a href="/contact" class="nav-cta-btn">צור קשר</a>
+    </div>
+  </div>
+</nav>
+  
+  <main>
+    <section class="collections-page-intro-section" data-layout-spec="קולקציות-page-intro">
+  <div class="collections-page-intro-container">
+    <div class="collections-page-intro-content">
+      <div class="collections-page-intro-text">
+        <h1>קולקציות לכל חלל חיצוני</h1>
+        <p>בחרו לפי תפקוד – פינות אוכל, ישיבה, הצללה ואביזרים – והתאימו גימורים בביטחון. פרטים נוספים זמינים בפנייה דרך צור קשר.</p>
+      </div>
+      <div class="collections-page-intro-image-wrapper">
+        <img data-placeholder="collections-page-intro-image-1" data-context="A curated outdoor furniture collection display showing teak dining chairs and a matching table on a sunlit patio, with natural wood tones, clean lines, and premium fabric cushions in neutral beige, styled like a high-end catalog photo with soft natural lighting" width="700" height="520" src="/assets/site-collections-page-intro-image-1.webp" alt="קולקציית ריהוט גן מעוצבת">
+      </div>
+    </div>
+  </div>
+  <div class="collections-page-intro-divider"></div>
+</section>
+
+<section class="collections-category-grid-section" data-layout-spec="קולקציות-category-grid">
+  <div class="collections-category-grid-container">
+    <div class="collections-category-grid-header">
+      <h2>עיון לפי יעוד</h2>
+      <p>בחרו את הקטגוריה המתאימה לכם ומצאו את הפתרון המושלם לגינה או למרפסת שלכם</p>
+    </div>
+    
+    <div class="collections-category-grid">
+      <!-- Category 1: Dining Sets -->
+      <a href="/contact" class="collections-category-card">
+        <div class="collections-category-image-wrapper">
+          <img data-placeholder="collections-category-grid-image-1" data-context="Elegant outdoor dining set on a sunny patio - wooden or aluminum table with 6-8 chairs, neutral cushions, Mediterranean garden setting with natural sunlight, professional product photography for outdoor furniture catalog" width="600" height="400" src="/assets/site-collections-category-grid-image-1.webp" alt="פינות אוכל לגינה">
+        </div>
+        <div class="collections-category-content">
+          <h3>פינות אוכל</h3>
+          <p>שולחנות ישיבה במגוון גדלים, עמידים בפני תנאי מזג אוויר, עם אפשרויות גימור מעץ טיק, אלומיניום או ראטן סינטטי.</p>
+        </div>
+      </a>
+
+      <!-- Category 2: Lounge and Conversation -->
+      <a href="/contact" class="collections-category-card">
+        <div class="collections-category-image-wrapper">
+          <img data-placeholder="collections-category-grid-image-2" data-context="Comfortable outdoor lounge seating area - modular sofa set with plush cushions, coffee table, terrace or garden setting with greenery, warm afternoon light, professional furniture catalog photography" width="600" height="400" src="/assets/site-collections-category-grid-image-2.webp" alt="פינות ישיבה ולאונג׳">
+        </div>
+        <div class="collections-category-content">
+          <h3>פינות ישיבה ולאונג׳</h3>
+          <p>ספות מודולריות, כורסאות נוחות ושולחנות סלון לחצר, מעוצבים לשיחה ולרגעי נופש בחוץ עם כריות רכות ועמידות.</p>
+        </div>
+      </a>
+
+      <!-- Category 3: Shade and Umbrellas -->
+      <a href="/contact" class="collections-category-card">
+        <div class="collections-category-image-wrapper">
+          <img data-placeholder="collections-category-grid-image-3" data-context="Large outdoor patio umbrella providing shade - cantilever or center pole umbrella in neutral color, over lounge furniture on sunny terrace, professional outdoor living catalog photography" width="600" height="400" src="/assets/site-collections-category-grid-image-3.webp" alt="הצללה ושמשיות">
+        </div>
+        <div class="collections-category-content">
+          <h3>הצללה ושמשיות</h3>
+          <p>שמשיות גן במידות שונות, פרגולות ומערכות הצללה מתקדמות עם בדי חוץ עמידים לשמש ולגשם, למרפסות ופטיו.</p>
+        </div>
+      </a>
+
+      <!-- Category 4: Accessories and Covers -->
+      <a href="/contact" class="collections-category-card">
+        <div class="collections-category-image-wrapper">
+          <img data-placeholder="collections-category-grid-image-4" data-context="Outdoor furniture accessories and protective covers - cushions, decorative pillows, furniture covers in neutral tones, styled on garden furniture, clean product photography for catalog" width="600" height="400" src="/assets/site-collections-category-grid-image-4.webp" alt="אביזרים וכיסויים">
+        </div>
+        <div class="collections-category-content">
+          <h3>אביזרים וכיסויים</h3>
+          <p>כריות נוי, כיסויים להגנה על ריהוט גן, בדי חוץ עמידים לריפוד והחלפה, באיכות גבוהה ובמגוון צבעים וטקסטורות.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Bottom Divider: Clipped Corner Edge -->
+  <div class="collections-category-grid-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,60 L0,0 L1140,0 L1200,60 Z" fill="var(--bg-dark)"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="קולקציות-signature-sets-section" data-layout-spec="קולקציות-signature-sets">
+  <div class="signature-sets-container">
+    <div class="signature-sets-header">
+      <h2>מראה חתימה, חומרים נצחיים</h2>
+      <p>שילובים מוקפדים שעומדים במבחן האקלים הישראלי – לאורך זמן.</p>
+    </div>
+
+    <div class="signature-sets-row signature-sets-row-1">
+      <div class="signature-sets-image-column">
+        <img data-placeholder="קולקציות-signature-sets-image-1" data-context="Modern outdoor lounge furniture set in natural garden setting, featuring clean-lined sofa with comfortable cushions in neutral tones, wooden or metal frame, surrounded by greenery, natural sunlight, professional catalog photography style for Israeli outdoor furniture brand" width="600" height="700" src="/assets/site-signature-sets-image-1.webp" alt="פינת ישיבה מודרנית לגינה">
+      </div>
+      <div class="signature-sets-content-column">
+        <h3>פינת ישיבה מודרנית ורגועה</h3>
+        <p>מסגרת עמידה בשילוב כריות נוחות ובחירה מגוונת של גימורים – מעוצבת לשעות של נוחות תחת השמש הישראלית. כל רכיב נבחר בקפידה לעמידות ולנוחות לאורך זמן.</p>
+        <a href="/contact" class="btn-primary signature-sets-cta">פרטים נוספים</a>
+      </div>
+    </div>
+
+    <div class="signature-sets-row signature-sets-row-2">
+      <div class="signature-sets-content-column">
+        <h3>פינת אוכל קלאסית תחת השמיים</h3>
+        <p>משטחים יציבים, ניקוי קל והדרכה מדויקת לגודל – פינת אוכל שמתאימה בדיוק למרפסת או לגינה שלכם. עמידה בפני מזג אויר קיצוני ומעוצבת לארוחות משפחתיות נעימות.</p>
+        <a href="/contact" class="btn-primary signature-sets-cta">פרטים נוספים</a>
+      </div>
+      <div class="signature-sets-image-column">
+        <img data-placeholder="קולקציות-signature-sets-image-2" data-context="Classic outdoor dining set under open sky, featuring stable table with elegant chairs, easy-to-clean surfaces, natural wood or metal finish, Israeli garden setting with natural light, professional catalog photography for outdoor furniture" width="600" height="700" src="/assets/site-signature-sets-image-2.webp" alt="פינת אוכל קלאסית לחצר">
+      </div>
+    </div>
+  </div>
+
+  <div class="signature-sets-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 L0,45 Q100,42 200,48 T400,45 Q500,50 600,44 T800,48 Q900,42 1000,50 T1200,35 L1200,80 Z" fill="var(--bg-light)"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="collections-comparison-section" data-layout-spec="קולקציות-comparison">
+  <div class="comparison-container">
+    <div class="comparison-header">
+      <h2>בחירת החומר המתאים</h2>
+      <p>חשיפה לשמש, רמת לחות והמראה הרצוי קובעים את ההתאמה הטובה ביותר. כל חומר מציע יתרונות ייחודיים לסגנון חיים שונה.</p>
+    </div>
+
+    <div class="comparison-grid">
+      <div class="comparison-column">
+        <h3>עץ טיק או דומיו</h3>
+        <div class="comparison-item">
+          <strong class="item-label">מתאים במיוחד ל:</strong>
+          <p>אזורים מוצלים חלקית, אקלים ים תיכוני, מי שמחפש מראה חם ואותנטי עם פטינה טבעית לאורך זמן.</p>
+        </div>
+        <div class="comparison-item">
+          <strong class="item-label">מראה ותחושה:</strong>
+          <p>גוון דבש עשיר שמשתנה לאפור כסוף עם השנים. משטח חלק ונעים למגע, משקל כבד יחסית, נוכחות מוצקה.</p>
+        </div>
+        <div class="comparison-item">
+          <strong class="item-label">הנחיות תחזוקה:</strong>
+          <p>ניקוי עם מים וסבון עדין פעמיים בשנה. שמן טיק אופציונלי אם רוצים לשמור על הגוון המקורי. לא דורש כיסוי חורף.</p>
+        </div>
+      </div>
+
+      <div class="comparison-column">
+        <h3>אלומיניום בציפוי אבקה</h3>
+        <div class="comparison-item">
+          <strong class="item-label">מתאים במיוחד ל:</strong>
+          <p>חשיפה מלאה לשמש, אזורי חוף עם מליחות גבוהה, מי שמעדיף תחזוקה מינימלית ועמידות מקסימלית לאורך שנים.</p>
+        </div>
+        <div class="comparison-item">
+          <strong class="item-label">מראה ותחושה:</strong>
+          <p>קווים נקיים ומודרניים, פלטת צבעים רחבה (שחור מט, לבן, אפור אנתרציט). משקל קל, קל להזזה וסידור מחדש.</p>
+        </div>
+        <div class="comparison-item">
+          <strong class="item-label">הנחיות תחזוקה:</strong>
+          <p>שטיפה מהירה עם מים וספוג רך. עמיד בפני חלודה, שריטות קלות ודהייה. אין צורך בשמן או טיפול מיוחד.</p>
+        </div>
+      </div>
+
+      <div class="comparison-column">
+        <h3>ראטן סינטטי / חבל</h3>
+        <div class="comparison-item">
+          <strong class="item-label">מתאים במיוחד ל:</strong>
+          <p>מרפסות מקורות, פינות ישיבה נעימות, מי שמחפש מראה טבעי וחם ללא תחזוקה של קש או ראטן אמיתי.</p>
+        </div>
+        <div class="comparison-item">
+          <strong class="item-label">מראה ותחושה:</strong>
+          <p>מרקם אורגני עם גוונים טבעיים (חום, בז', אפור). משטח גמיש ונושם, מתאים לכריות ריפוד עמידות למים.</p>
+        </div>
+        <div class="comparison-item">
+          <strong class="item-label">הנחיות תחזוקה:</strong>
+          <p>ניקוי עם מברשת רכה ומים. עמיד בפני UV וגשם, אך מומלץ כיסוי בחורף לשמירה על גוון ועל גמישות החומר.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="collections-contact-callout-section" data-layout-spec="קולקציות-contact-callout">
+  <div class="collections-contact-callout-container">
+    <div class="collections-contact-callout-content">
+      <h2 class="collections-contact-callout-title">רוצים המלצה מותאמת אישית?</h2>
+      <p class="collections-contact-callout-text">שתפו אותנו במידות, בגוון המועדף ובחשיפה לתנאי מזג אויר – ונמצא עבורכם את הפתרון המושלם לריהוט הגן שלכם.</p>
+      <a href="/contact" class="collections-contact-callout-cta">
+        צרו קשר
+        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</section>
+  </main>
+  
+  <footer class="site-footer"><div class="footer-container"><div class="footer-content"><div class="footer-column footer-about"><img src="/assets/business-logo.webp" alt="sunova" class="logo" /><p class="footer-description">ריהוט גן איכותי ואביזרים מעוצבים להפיכת החצר שלכם למרחב חלומי</p><div class="social-links"><a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="[instagram_handle]" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="[whatsapp_handle]" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div><div class="footer-column footer-links"><h3>קישורים מהירים</h3><ul><li><a href="/collections">קולקציות</a></li><li><a href="/materials-care">חומרים ותחזוקה</a></li><li><a href="/contact">צור קשר</a></li></ul></div><div class="footer-column footer-contact"><h3>יצירת קשר</h3><ul><li><i class="fas fa-envelope"></i><a href="mailto:[business_email]">[business_email]</a></li><li><i class="fas fa-phone"></i><a href="tel:[business_phone]">[business_phone]</a></li><li><a href="/"><i class="fas fa-map-marker-alt"></i><span>[business_address]</span></a></li></ul></div></div><div class="footer-bottom"><div class="footer-legal"><a href="/privacy">מדיניות פרטיות</a><span class="separator">|</span><a href="/terms">תנאים והגבלות</a><span class="separator">|</span><a href="/accessibility">הצהרת נגישות</a></div><div class="footer-copyright"><p>© 2026 sunova. כל הזכויות שמורות.</p><a href="https://zappy5.com" target="_blank" class="zappy-attribution">Generated by Zappy</a></div></div></div></footer>
+  
+  <a href="https://wa.me/[whatsapp_handle]" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+  <script src="/script.js"></script>
+
+    <div data-integration="accessibility:toolbar"></div>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+      // Re-initialize when mobile menu becomes visible (MutationObserver)
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.type === 'attributes') {
+            var target = mutation.target;
+            if (target.classList && (target.classList.contains('active') || target.classList.contains('open'))) {
+              setTimeout(initMobileSubmenuToggles, 100);
+            }
+          }
+        });
+      });
+      setTimeout(function() {
+        document.querySelectorAll('.mobile-menu, .nav-menu, #navMenu, nav').forEach(function(menu) {
+          observer.observe(menu, { attributes: true, attributeFilter: ['class', 'style'] });
+        });
+      }, 500);
+    })();
+    </script>
+</body></html>
